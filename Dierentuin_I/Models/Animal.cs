@@ -6,13 +6,14 @@ namespace Dierentuin_I.Models
 {
     abstract class Animal
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public int Energy { get; set; }
-        public AnimalType TypeOfAnimal { get; set; }
-        public virtual void Eat()
+        public string TypeOfAnimal { get; set; }
+
+        public virtual int Eat()
         {
-            Energy += 25;
+            return Energy += 25;
         }
+        public abstract int EnergyUse();
     }
 }
