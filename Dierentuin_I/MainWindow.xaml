@@ -5,28 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dierentuin_I"
         mc:Ignorable="d"
-        Title="MainWindow" Height="748" Width="1024" WindowStyle="ToolWindow" ResizeMode="NoResize">
-    <Grid>
+        Title="Dierentuin" Height="748" Width="310" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid Margin="0,2,3,3">
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="379"/>
-            <RowDefinition Height="62*"/>
-            <RowDefinition Height="251*"/>
+            <RowDefinition Height="849.04"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="253*"/>
-            <ColumnDefinition Width="610*"/>
-            <ColumnDefinition Width="161*"/>
         </Grid.ColumnDefinitions>
-        <Button Name="FeedMonkey" Content="Voer de apen" Margin="10,58,480,279" Grid.Row="1" Grid.Column="1" Click="FeedMonkey_Click" Width="120" Height="20"/>
-        <Button Name="FeedLion" Content="Voer de leeuwen" Margin="10,106,480,231" Grid.Row="1" Grid.Column="1" Click="FeedLion_Click" Width="120" Height="20"/>
-        <Button Name="FeedElephant" Content="Voer de olifanten" Margin="10,152,480,185" Grid.Row="1" Grid.Column="1" Click="FeedElephant_Click" Width="120" Height="20"/>
-        <Button Name="FeedAllAnimals" Content="Voer alle dieren" Margin="10,10,480,327" Grid.Row="1" Click="FeedAllAnimals_Click" Grid.Column="1" Height="20"/>
-        <Button Name="AddNewAnimal" Content="Nieuw dier toevoegen" Margin="353,10,123,10" Grid.Column="1" Click="AddNewAnimal_Click" Height="20"/>
-        <DataGrid Name="DG_Animals" Grid.Row="1" Margin="10,10,10,0"/>
-        <TextBox Name="TB_NameAnimal" TextWrapping="Wrap" Grid.Column="1" Margin="75,10,415,10" Height="20" Width="120"/>
-        <ComboBox Name="CB_animals" Grid.Column="1" Margin="212,10,278,10" Height="20" Width="120"/>
-        <Label Name="LB_NaamLabel" Content="Naam " HorizontalAlignment="Left" Margin="21,0,0,0" VerticalAlignment="Center" Width="49" Grid.Column="1" Height="26"/>
+        <Button Name="FeedMonkey" Content="Voer de apen" Margin="30,596,30,233" Click="FeedMonkey_Click" Height="20"/>
+        <Button Name="FeedLion" Content="Voer de leeuwen" Margin="30,646,30,183" Click="FeedLion_Click" Height="20"/>
+        <Button Name="FeedElephant" Content="Voer de olifanten" Margin="30,621,30,208" Click="FeedElephant_Click" Height="20"/>
+        <Button Name="FeedAllAnimals" Content="Voer alle dieren" Margin="30,571,30,258" Click="FeedAllAnimals_Click" Height="20"/>
+        <DataGrid Name="DG_Animals" Margin="30,196,29,283" Height="370"/>
+        <Label x:Name="lb_deadanimals" Content="" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Height="31" Width="238"/>
+        <Button x:Name="Btn_Add_Lion" Content="Leeuw toevoegen" Margin="30,93,31,0" VerticalAlignment="Top" Click="Btn_Add_Lion_Click"/>
+        <Button x:Name="Btn_Add_Monkey" Content="Aap toevoegen" Margin="30,68,31,0" VerticalAlignment="Top" Click="Btn_Add_Monkey_Click"/>
+        <Button x:Name="Btn_Add_Elephant" Content="Olifant toevoegen" Margin="30,118,31,0" VerticalAlignment="Top" Click="Btn_Add_Elephant_Click"/>
+        <CheckBox x:Name="cb_monkeys" Content="Alle apen" HorizontalAlignment="Left" Margin="23,686,0,0" VerticalAlignment="Top"  />
+        <CheckBox x:Name="cb_Lions" Content="Alle leeuwen" HorizontalAlignment="Left" Margin="100,686,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cb_elephants" Content="Alle olifanten" HorizontalAlignment="Left" Margin="197,686,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
